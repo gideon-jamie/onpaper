@@ -481,7 +481,10 @@
         text-align:justify;
         text-justify: inter-word;
         text-align-last:left;
-    }               
+    } 
+	.autoH {
+		height:auto;
+	}
 
 @media only screen and (max-width: 768px) {
     body {
@@ -569,41 +572,24 @@ $( document ).ready(function() {
       $('.paper-2').css("overflow", function(_,val){ 
            return val == "hidden" ? "visible" : "hidden";
       });
-		var divHeight = $('.paper-2').height();
-		alert(divHeight);
-		if ( divHeight == '171.398') {
-			$('.paper-2').height('auto');
-		} else {
-			$('.paper-2').height('20vh');
-		}
+		$('.paper-2').toggleClass('autoH');
      });
 	
 	$('#artist').on('click', function() {
       $('.paper-5').css("overflow", function(_,val){ 
            return val == "hidden" ? "visible" : "hidden";
       });
-		var divHeight = $('.paper-5').height();
-		if ( divHeight == '171.398') {
-			$('.paper-5').height('auto');
-		} else {
-			$('.paper-5').height('20vh');
-		}
+		$('.paper-5').toggleClass('autoH');
      });
 	
 	$('#credits').on('click', function() {
       $('.paper-6').css("overflow", function(_,val){ 
            return val == "hidden" ? "visible" : "hidden";
       });
-		var divHeight = $('.paper-6').height();
-		if ( divHeight == '171.398') {
-			$('.paper-6').height('auto');
-		} else {
-			$('.paper-6').height('20vh');
-		}
+		$('.paper-6').toggleClass('autoH');
      });
 
 });
 </script>
 
 </html>
-
