@@ -552,7 +552,7 @@
     body {
     
     }
-    .wrap {
+	.wrap {
 		width:100%;
 	}
     .paper-1 {
@@ -561,15 +561,17 @@
 		line-height:200%;
         margin:auto;
 		text-align:justify;
+		text-align: -moz-center;
+		text-align: -webkit-center;
         text-justify: inter-word;
         text-align-last:justify;
         line-height: 180%;
     }
-	.paper-1:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
+.o:after {
+        content: "";
+        display: inline-block;
+        width: 100%;	
+    }
     .text2 {
         font-size:8vw;
     }
@@ -583,7 +585,7 @@
 	.text5 {
         padding-top:3vh;
         font-size:3.3vw;
-	letter-spacing: 0.02em;
+		letter-spacing: 0.02em;
         line-height: 160%;
         text-justify: none;
         text-align: left;
