@@ -552,16 +552,24 @@
     body {
     
     }
+    .wrap {
+		width:100%;
+	}
     .paper-1 {
-        width:88%;
+        max-width:88%;
         padding-top:8vw;
-	line-height:200%;
+		line-height:200%;
         margin:auto;
-	text-align: justify;
+		text-align:justify;
         text-justify: inter-word;
-        text-align-last: justify;
+        text-align-last:justify;
         line-height: 180%;
     }
+	.paper-1:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
     .text2 {
         font-size:8vw;
     }
