@@ -559,17 +559,21 @@
         max-width:88%;
         padding-top:8vw;
 		line-height:200%;
-        margin:auto;
-		text-align:justify;
-        text-justify: inter-word;
-        text-align-last:justify;
-        line-height: 180%;
     }
 .onPaper1:after {
         content: "";
         display: inline-block;
-        width: 100%;	
+        width: 100%;
     }
+.onPaper1:after {
+        display:none;
+	}
+.onPaper1 {
+		 text-align:justify;
+        text-justify: inter-word;
+        text-align-last:justify;
+	}
+	
     .text2 {
         font-size:8vw;
     }
@@ -580,12 +584,6 @@
 		font-size:3.8vw;
 		padding-top:45vh;
 	}
-
-	.text4:after {
-        content: "";
-        display: inline-block;
-        width: 100%;	
-    }
 	.text5 {
         padding-top:3vh;
         font-size:3.3vw;
