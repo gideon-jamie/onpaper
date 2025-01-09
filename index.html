@@ -484,6 +484,7 @@
 		padding-bottom:5vh;
         font-size:2.7vw;
         line-height: 180%;
+		z-index:0;
     }
     .text2 {
         font-size:5vw;
@@ -556,10 +557,30 @@
 		width:100%;
 	}
     .paper-1 {
-        max-width:88%;
+        width:80%;
         padding-top:8vw;
 		line-height:6.6vw;
     }
+	#info {
+		width:80%;
+		margin:auto;
+	}
+	#prog {
+		width:80%;
+		margin:auto;
+	}
+	#blog {
+		width:80%;
+		margin:auto;
+	}
+	#artist {
+		width:80%;
+		margin:auto;
+	}
+	#credits {
+		width:80%;
+		margin:auto;
+	}
 	.onPaper1 {
 		text-align:justify;
         text-justify: inter-word;
@@ -591,11 +612,8 @@
 		height: 10px;
 
 	}
-	.text4-line {
-		
-	}
 	.text5 {
-        padding-top:3vh;
+        padding-top:6vh;
         font-size:3.3vw;
 		letter-spacing: 0.02em;
         line-height: 160%;
@@ -619,12 +637,12 @@
 	.rotate {
         top:3vh;
         left:1.5vh;
-		font-size:2.6vw;
+		font-size:3vw;
     }
 	.rotate1 {
-        top:4vh;
+        top:5vh;
         left:0.2vh;
-		font-size:2.6vw;
+		font-size:3vw;
     }
 	.credits-1 {
 		width: 88%;
@@ -664,6 +682,8 @@
 <script>
 $( document ).ready(function() {
 	var addNew = true;
+
+	
 	$(window).scroll(function(){
 		var infoHeight = $('#info').offset().top;
 		var text4Scroll = $('.text4').offset().top;
@@ -674,12 +694,15 @@ $( document ).ready(function() {
 			$("html").animate({ scrollTop: $('#info').offset().top }, 1000);
 			addNew = false;
 		};
+		
 		if (log > 50 ) {
 			addNew = true;
 		};
+		
 	});
 	
 	$('.paper-2').on('click', function() {
+
       $('.paper-2').css("overflow", function(_,val){ 
            return val == "hidden" ? "visible" : "hidden";
       });
@@ -702,9 +725,6 @@ $( document ).ready(function() {
 		$('.paper-6').toggleClass('autoH');
 		$("html").animate({ scrollTop: $('#credits').offset().top }, 500);
      });
-	
-	
-	
 
 });
 </script>
