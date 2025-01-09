@@ -664,23 +664,19 @@
 <script>
 $( document ).ready(function() {
 	var addNew = true;
-	
 	$(window).scroll(function(){
 		var infoHeight = $('#info').offset().top;
 		var text4Scroll = $('.text4').offset().top;
-		var windowHeight = $(window).height();
-		var windowScroll = $(window).scrollTop() + windowHeight;
+		var log = text4Scroll - $(window).scrollTop();
+		var windowHeight = $(window).height()*1.3;
 
-		if ( text4Scroll > 1234 && addNew ) {
+		if ( log < 10 && addNew ) {
 			$("html").animate({ scrollTop: $('#info').offset().top }, 1000);
 			addNew = false;
 		};
-		
-		if (text4Scroll < 800) {
+		if (log > 50 ) {
 			addNew = true;
-		}
-		
-
+		};
 	});
 	
 	$('.paper-2').on('click', function() {
