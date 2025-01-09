@@ -13,14 +13,14 @@
 <body>
 <div class="wrap">
 <div class="paper-1">
-        <span class="onPaper1">| &emsp; &emsp;&emsp; | &emsp;on &emsp;paper</span><br>
+	<span class="onPaper1">| &emsp; &emsp;&emsp; | &emsp;on &emsp;paper</span><br>
         <span class="onPaper1">| &emsp; on &emsp; | &emsp;&emsp; paper</span><br>
         <span class="onPaper1">| &emsp; on &emsp; paper&emsp; &emsp; |</span><br>
         <span class="onPaper1">on &emsp;&emsp; &emsp; | &emsp;paper&emsp; |</span><br>
         <div class="onPaper1">no &emsp; paper&emsp; | &emsp;&emsp;&emsp; |
 			<div class="text4">
-        		17 – 28 Jan & 5 – 9 Feb &thinsp;2025<br>
-        		&thinsp;F A R M Waterloo Centre<br>
+        		<span class="text4-line">17 – 28 Jan & 5 – 9 Feb &thinsp;2025</span><br>
+        		<span class="text4-line">&thinsp;F A R M Waterloo Centre</span><br>
     		</div>
 		</div><br><br><br>
 </div>
@@ -319,15 +319,15 @@
         font-weight: 500;
         font-style: normal;
         width:100vw;
+		padding-top:6vh;
     }
     .paper-1 {
         width:70%;
         margin:auto;
-        padding-top:5vh;
         text-align:justify;
         text-justify: inter-word;
         text-align-last:justify;
-		font-size:5.5vw;
+		font-size: 5.5vw;
         line-height: 180%;
     }
     .paper-2 {
@@ -474,7 +474,7 @@
         width:100%;
     }
     .onPaper1 {
-        background-color: white;
+       background-color: white;
         position: -webkit-sticky;
         position: sticky;
         top: 6vh;
@@ -555,38 +555,42 @@
 	.wrap {
 		width:100%;
 	}
-   .paper-1 {
+    .paper-1 {
         max-width:88%;
         padding-top:8vw;
-	line-height:200%;
-        margin:auto;
-	text-align:justify;
+		line-height:6.6vw;
+    }
+	.onPaper1 {
+		text-align:justify;
         text-justify: inter-word;
         text-align-last:justify;
-    }
-.onPaper1:after {
+		background-color:white;
+	}
+	.onPaper1:after {
         content: "";
         display: inline-block;
         width: 100%;
     }
-.onPaper1:after {
-        visibility: hidden;
-	}
-.onPaper1 {
-		 text-align:justify;
-        text-justify: inter-word;
-        text-align-last:justify;
-	}
-	
     .text2 {
         font-size:8vw;
     }
     .text3 {
         font-size:5vw;
     }
-	.text4{
+	.text4 {
 		font-size:3.8vw;
 		padding-top:45vh;
+		line-height:3.8vw;
+	}
+	.text4-line:after {
+		content: "";
+        display: inline-block;
+        width: 100%;
+		height: 10px;
+
+	}
+	.text4-line {
+		
 	}
 	.text5 {
         padding-top:3vh;
