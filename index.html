@@ -71,8 +71,33 @@
 		<div class="text5">
 			<div class="rotate1"><a href=""></a>programmes</div>
 			<hr style="height:4vh; visibility:hidden;" />
-		18 Jan, 3PM—7PM <br>
-		Opening Reception <br>
+			<div class="text7">
+			Opening Reception <br>
+			18 Jan, 3PM—7PM <br><br>
+			</div>
+			
+			<div class="text7">
+			A Walk Above the MRT Line<br>
+			by Lu Yixin<br>
+			25 Jan, 3PM—4PM<br>
+			Ticketed, $5<br><br>
+			</div>
+			
+			<div class="text7">
+			Revenge of the Page: An Indexing Workshop<br>
+			by Isabella Ong<br>
+			25 Jan, 5PM — 6PM<br>
+			Ticketed, sliding scale of $5-20<br><br>
+			</div>
+			
+			<div class="text7">
+			One and Many Things (with Paper)<br>
+			by Song-Ming Ang<br>
+			26 Jan, 3PM — 5PM<br>
+			Ticketed, sliding scale of $5-20<br><br>
+			</div>
+			
+			
 		</div>
 	</div>
 </div>
@@ -713,6 +738,15 @@ $( document ).ready(function() {
            return val == "hidden" ? "visible" : "hidden";
       });
 		$('.paper-2').toggleClass('autoH');
+		$("html").animate({ scrollTop: $('#info').offset().top }, 500);
+     });
+	
+	$('.paper-3').on('click', function() {
+
+      $('.paper-3').css("overflow", function(_,val){ 
+           return val == "hidden" ? "visible" : "hidden";
+      });
+		$('.paper-3').toggleClass('autoH');
 		$("html").animate({ scrollTop: $('#info').offset().top }, 500);
      });
 	
