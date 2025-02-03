@@ -20,7 +20,7 @@
         <div class="onPaper1">no &emsp; paper&emsp; | &emsp;&emsp;&emsp; |
 			<div class="text4">
         		<span class="text4-line">17 – 28 Jan & 5 – 9 Feb &thinsp;2025</span><br>
-        		<span class="text4-line">&thinsp;F A R M Waterloo Centre</span><br>
+        		<span class="text4-line">&thinsp;F A R M  &emsp; &emsp;&emsp;Waterloo Centre</span><br>
     		</div>
 		</div><br><br><br>
 </div>
@@ -349,6 +349,8 @@
     html, body{
         margin: 0;
         padding: 0;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
     }
 	a {
 		text-decoration:underline;
@@ -810,24 +812,24 @@ $( document ).ready(function() {
 		}
 	
 		
-		if ( $(window).scrollTop() >= log2 - 50 ) {
+		if ( $(window).scrollTop() >= log2 ) {
 			$('.rotateinfo, .rotateartist, .rotatecredits, .rotateblog').css("position", "absolute");
 			$('.rotateprog').css("position","fixed");
 			
 		}
 		
-		if ( $(window).scrollTop() >= $('#blog').offset().top - 50 ) {
+		if ( $(window).scrollTop() >= $('#blog').offset().top ) {
 			$('.rotateinfo, .rotateprog, .rotatecredits, rotateartist').css("position", "absolute");
 			$('.rotateblog').css("position","fixed");
 		}
 		
 		
-		if ( $(window).scrollTop() >= $('#artist').offset().top - 50 ) {
+		if ( $(window).scrollTop() >= $('#artist').offset().top ) {
 			$('.rotateinfo, .rotateprog, .rotatecredits, .rotateblog').css("position", "absolute");
 			$('.rotateartist').css("position","fixed");
 		}
 		
-		if ( $(window).scrollTop() >= $('#credits').offset().top - 50 ) {
+		if ( $(window).scrollTop() >= $('#credits').offset().top ) {
 			$('.rotateinfo, .rotateprog, .rotateartist, .rotateblog').css("position", "absolute");
 			$('.rotatecredits').css("position","fixed");
 		}
